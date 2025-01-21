@@ -1,0 +1,29 @@
+/* tailwind import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font import */
+@font-face {
+  font-family: "Iranian-Sans";
+  src: url("./fonts/iranian sans/Iranian Sans.ttf");
+}
+
+/* main styles */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Iranian-Sans";
+  direction: rtl;
+}
+
+/* toggle mood */
+.dark {
+  background: #020617;
+  color: #f1f5f9;
+}
+.light {
+  background: #f1f5f9;
+  color: #020617;
+}

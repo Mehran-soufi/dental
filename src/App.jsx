@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "./components/header/Header";
 
 function App() {
   const [toggleMood, setToggleMood] = useState("light");
@@ -8,7 +9,9 @@ function App() {
       className={`w-full transition-all duration-200 ease-in ${
         toggleMood == "light" ? "light" : toggleMood == "dark" ? "dark" : null
       }`}
-    ></section>
+    >
+      <Header toggleMood={toggleMood} setToggleMood={setToggleMood} />
+    </section>
   );
 }
 

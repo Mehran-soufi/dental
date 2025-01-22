@@ -20,10 +20,36 @@ body {
 
 /* toggle mood */
 .dark {
-  background: #020617;
-  color: #f1f5f9;
+  background: black;
+  color: white;
 }
 .light {
-  background: #f1f5f9;
-  color: #020617;
+  background: white;
+  color: black;
+}
+
+/* header */
+.header-menu {
+  cursor: pointer;
+  transition: all ease 0.3s;
+  position: relative;
+  padding-bottom: .3rem;
+  overflow: hidden;
+}
+.header-menu::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #06b6d4;
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  border-radius: .4rem;
+  transition: all ease 0.3s;
+}
+.header-menu:hover{
+  color: #06b6d4;
+}
+.header-menu:hover::after{
+  right: 0;
 }

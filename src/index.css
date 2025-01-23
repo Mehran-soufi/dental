@@ -33,7 +33,7 @@ body {
   cursor: pointer;
   transition: all ease 0.3s;
   position: relative;
-  padding-bottom: .3rem;
+  padding-bottom: 0.3rem;
   overflow: hidden;
 }
 .header-menu::after {
@@ -44,12 +44,41 @@ body {
   position: absolute;
   bottom: 0;
   right: -100%;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   transition: all ease 0.3s;
 }
-.header-menu:hover{
+.header-menu:hover {
   color: #06b6d4;
 }
-.header-menu:hover::after{
+.header-menu:hover::after {
   right: 0;
 }
+
+/* nav custom */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s;
+  padding: 1rem 3rem;
+}
+@media (max-width:768px){
+  .sticky-nav {
+    padding: 1rem ;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+  display: none;
+  }
+  .mobile-menu.open {
+  display: block;
+  }
+  }
+
+  
+.no-scroll {
+  overflow: hidden;
+  }

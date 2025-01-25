@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
-import MobileMenu from "./components/header/MobileMenu";
+import Service from "./components/service/Service";
 
 function App() {
   const [toggleMood, setToggleMood] = useState("light");
@@ -15,7 +15,7 @@ function App() {
       <Header toggleMood={toggleMood} setToggleMood={setToggleMood} />
       <Hero toggleMood={toggleMood} />
       <Hero toggleMood={toggleMood} />
-      {/* <MobileMenu toggleMood={toggleMood}/> */}
+      <Service />
     </section>
   );
 }
